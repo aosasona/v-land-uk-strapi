@@ -63,11 +63,11 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "author": {
+    "article": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::author.author",
-      "inversedBy": "users_permissions_user"
+      "target": "api::article.article",
+      "inversedBy": "author"
     }
   }
 }

@@ -34,11 +34,6 @@
       "type": "richtext",
       "required": true
     },
-    "publishDate": {
-      "type": "datetime",
-      "unique": true,
-      "required": false
-    },
     "visibility": {
       "type": "boolean",
       "default": true,
@@ -49,16 +44,23 @@
       "required": true,
       "minLength": 20
     },
-    "author": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::author.author"
-    },
     "categories": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::category.category",
       "mappedBy": "article"
+    },
+    "feedbacks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::feedback.feedback",
+      "mappedBy": "article"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "article"
     }
   }
 }

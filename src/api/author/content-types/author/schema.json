@@ -28,12 +28,6 @@
       ],
       "type": "media",
       "multiple": false
-    },
-    "users_permissions_user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "author"
     }
   }
 }
