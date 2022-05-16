@@ -9,6 +9,8 @@
     "better-sqlite3": "7.4.6",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
+    "pg": "^8.7.3",
+    "pg-connection-string": "^2.5.0",
     "strapi-plugin-comments": "^2.1.5",
     "strapi-plugin-config-sync": "^1.0.1",
     "strapi-plugin-ezforms": "^0.0.7",

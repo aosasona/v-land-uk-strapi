@@ -1,46 +1,60 @@
 {
   "categories": [
     {
-      "name": "news",
-      "slug": "news"
+      "name": "Articles",
+      "slug": "articles"
     },
     {
-      "name": "tech",
-      "slug": "tech"
+      "name": "Interviews",
+      "slug": "interviews"
     },
     {
-      "name": "food",
-      "slug": "food"
+      "name": "Food & Drink",
+      "slug": "food-drink"
     },
     {
-      "name": "nature",
-      "slug": "nature"
+      "name": "Lifestyle",
+      "slug": "lifestyle"
     },
     {
-      "name": "story",
-      "slug": "story"
-    }
-  ],
-  "homepage": {
-    "seo": {
-      "metaTitle": "My personal Strapi blog",
-      "metaDescription": "Discover my SEO friendly blog built with Strapi.",
-      "shareImage": null
-    },
-    "hero": {
-      "title": "My blog"
-    }
-  },
-  "writers": [
-    {
-      "name": "David Doe",
-      "email": "daviddoe@strapi.io",
-      "picture": null
+      "name": "Fashion & Beauty",
+      "slug": "fashion-beauty"
     },
     {
-      "name": "Sarah Baker",
-      "email": "sarahbaker@strapi.io",
-      "picture": null
+      "name": "Recipes",
+      "slug": "recipes"
+    },
+    {
+      "name": "Health & Wellbeing",
+      "slug": "health-wellbeing"
+    },
+    {
+      "name": "Shopping",
+      "slug": "shopping"
+    },
+    {
+      "name": "Entertainment",
+      "slug": "entertainment"
+    },
+    {
+      "name": "Environment",
+      "slug": "environment"
+    },
+    {
+      "name": "Shoutout",
+      "slug": "shoutout"
+    },
+    {
+      "name": "Europe",
+      "slug": "europe"
+    },
+    {
+      "name": "Events",
+      "slug": "events"
+    },
+    {
+      "name": "Brazil",
+      "slug": "brazil"
     }
   ],
   "articles": [
