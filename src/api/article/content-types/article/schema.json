@@ -34,11 +34,6 @@
       "type": "richtext",
       "required": true
     },
-    "visibility": {
-      "type": "boolean",
-      "default": true,
-      "required": true
-    },
     "description": {
       "type": "text",
       "required": true,
@@ -56,11 +51,15 @@
       "target": "api::feedback.feedback",
       "mappedBy": "article"
     },
+    "keywords": {
+      "type": "text",
+      "required": false,
+      "unique": false
+    },
     "author": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "article"
+      "type": "biginteger",
+      "required": true,
+      "default": "1"
     }
   }
 }

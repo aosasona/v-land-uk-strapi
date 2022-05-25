@@ -4,30 +4,35 @@
   "info": {
     "singularName": "author",
     "pluralName": "authors",
-    "displayName": "Author"
+    "displayName": "Author",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string",
+    "image": {
+      "type": "media",
+      "multiple": false,
       "required": true,
-      "unique": true
+      "allowedTypes": [
+        "images"
+      ]
     },
     "bio": {
       "type": "text"
     },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "author"
+    },
+    "fullname": {
+      "type": "string",
+      "required": true,
+      "unique": false
     }
   }
 }
