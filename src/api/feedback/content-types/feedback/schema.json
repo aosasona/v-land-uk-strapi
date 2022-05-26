@@ -4,7 +4,8 @@
   "info": {
     "singularName": "feedback",
     "pluralName": "feedbacks",
-    "displayName": "Feedback"
+    "displayName": "Feedback",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -12,19 +13,23 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "default": "A Lover Of The Green"
     },
     "comment": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "email": {
       "type": "email"
     },
-    "article": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::article.article",
-      "inversedBy": "feedbacks"
+    "articleId": {
+      "type": "biginteger",
+      "required": true
+    },
+    "articleSlug": {
+      "type": "string",
+      "required": true
     }
   }
 }

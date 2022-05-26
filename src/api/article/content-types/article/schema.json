@@ -45,12 +45,6 @@
       "target": "api::category.category",
       "mappedBy": "article"
     },
-    "feedbacks": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::feedback.feedback",
-      "mappedBy": "article"
-    },
     "keywords": {
       "type": "text",
       "required": false,
