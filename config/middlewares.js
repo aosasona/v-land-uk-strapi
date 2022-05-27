@@ -11,9 +11,12 @@ module.exports = [
             "'self'",
             "data:",
             "blob:",
+            "strapi.io",
             "dl.airtable.com",
+            "cloudinary.com",
             "res.cloudinary.com",
           ],
+
           "media-src": [
             "'self'",
             "data:",
@@ -26,6 +29,7 @@ module.exports = [
       },
     },
   },
+
   // ...
   "strapi::errors",
   "strapi::security",
