@@ -23,16 +23,16 @@
     "bio": {
       "type": "text"
     },
-    "author": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "author"
-    },
     "fullname": {
       "type": "string",
       "required": true,
       "unique": false
+    },
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article",
+      "inversedBy": "author"
     }
   }
 }

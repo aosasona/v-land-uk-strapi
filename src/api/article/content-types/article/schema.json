@@ -44,16 +44,17 @@
       "required": false,
       "unique": false
     },
-    "author": {
-      "type": "biginteger",
-      "required": true,
-      "default": "1"
-    },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "articles"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author",
+      "inversedBy": "article"
     }
   }
 }
