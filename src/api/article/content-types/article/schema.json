@@ -39,12 +39,6 @@
       "required": true,
       "minLength": 20
     },
-    "categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::category.category",
-      "mappedBy": "article"
-    },
     "keywords": {
       "type": "text",
       "required": false,
@@ -54,6 +48,12 @@
       "type": "biginteger",
       "required": true,
       "default": "1"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "articles"
     }
   }
 }

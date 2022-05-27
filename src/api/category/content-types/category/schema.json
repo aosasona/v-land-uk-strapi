@@ -21,9 +21,9 @@
       "type": "uid",
       "targetField": "name"
     },
-    "article": {
+    "articles": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::article.article",
       "inversedBy": "categories"
     }
