@@ -50,6 +50,9 @@
       ],
       "default": "he/him",
       "required": true
+    },
+    "linkedin": {
+      "type": "string"
     }
   }
 }
