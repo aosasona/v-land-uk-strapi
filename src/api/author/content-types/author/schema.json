@@ -27,12 +27,6 @@
       "type": "string",
       "required": true,
       "unique": false
-    },
-    "article": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::article.article",
-      "inversedBy": "author"
     }
   }
 }

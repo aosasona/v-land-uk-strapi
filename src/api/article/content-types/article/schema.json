@@ -53,8 +53,7 @@
     "author": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::author.author",
-      "inversedBy": "article"
+      "target": "api::author.author"
     }
   }
 }
