@@ -54,6 +54,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::author.author"
+    },
+    "FeaturedText": {
+      "type": "string"
+    },
+    "FeaturedURL": {
+      "type": "string"
     }
   }
 }
