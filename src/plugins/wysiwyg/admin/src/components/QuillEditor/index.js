@@ -25,7 +25,6 @@ const Editor = ({ onChange, name, value }) => {
       theme="snow"
       value={value}
       modules={modules}
-      //   style={{ color: "white" }}
       onChange={(content, event, editor) => {
         onChange({ target: { name, value: content } });
       }}

@@ -18,5 +18,8 @@ module.exports = ({ env }) => ({
     enabled: true,
     resolve: "./src/plugins/wysiwyg",
   },
+  publisher: {
+    enabled: true,
+  },
   // ...
 });

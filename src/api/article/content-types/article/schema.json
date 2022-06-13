@@ -60,6 +60,10 @@
     },
     "FeaturedURL": {
       "type": "string"
+    },
+    "PublishDate": {
+      "type": "datetime",
+      "required": true
     }
   }
 }
