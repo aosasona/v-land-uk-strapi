@@ -53,6 +53,11 @@
     },
     "linkedin": {
       "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "unique": true,
+      "min": 1
     }
   }
 }
